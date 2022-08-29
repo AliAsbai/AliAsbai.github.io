@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.82096fd2.css",
-    "main.js": "/static/js/main.77626813.js",
+    "main.css": "/static/css/main.131e7555.css",
+    "main.js": "/static/js/main.aca76210.js",
     "static/media/TheSans Plain.otf": "/static/media/TheSans Plain.91698183f27b3e8d106d.otf",
     "static/media/logo.png": "/static/media/logo.df87615a648362114c3c.png",
     "index.html": "/index.html",
-    "main.82096fd2.css.map": "/static/css/main.82096fd2.css.map",
-    "main.77626813.js.map": "/static/js/main.77626813.js.map"
+    "main.131e7555.css.map": "/static/css/main.131e7555.css.map",
+    "main.aca76210.js.map": "/static/js/main.aca76210.js.map"
   },
   "entrypoints": [
-    "static/css/main.82096fd2.css",
-    "static/js/main.77626813.js"
+    "static/css/main.131e7555.css",
+    "static/js/main.aca76210.js"
   ]
 }
