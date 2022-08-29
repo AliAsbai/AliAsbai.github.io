@@ -1,0 +1,9 @@
+.hoja__story-container h2 {
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.hoja__story-container p {
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}

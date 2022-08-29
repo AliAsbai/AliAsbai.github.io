@@ -1,0 +1,25 @@
+.spotlight h2 {
+    font-size: 22px;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(150, 150, 150, 1);
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.spotlight ol {
+    list-style-position: inside;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    color: var(--color-white);
+}
+
+.spotlight ol li{
+    margin-bottom: 1rem;
+}
+
+.spotlight ol li span {
+    font-weight: normal;
+}

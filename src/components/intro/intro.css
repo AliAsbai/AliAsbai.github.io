@@ -1,0 +1,26 @@
+.hoja__intro-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hoja__intro-container > h1 {
+    color: var(--color-black);
+    align-self: center;
+}
+
+.hoja__intro-container p {
+    align-self: center;
+    text-align: center;
+    color: var(--color-black);
+    max-width: 80%;
+}
+
+.hoja__intro-container p:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .hoja__intro-container > h1 {
+        text-shadow: 4px 0px 0px var(--color-black);
+    }
+}

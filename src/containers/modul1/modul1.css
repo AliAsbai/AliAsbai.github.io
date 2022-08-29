@@ -1,0 +1,13 @@
+.hoja__modul1 {
+    background-color: var(--color-secondary);
+}
+
+.hoja__modul1-header {
+    background-color: var(--color-black);
+    width: 100%;
+}
+
+.hoja__modul1-dark {
+    background-color: var(--color-primary);
+    width: 100%;
+}

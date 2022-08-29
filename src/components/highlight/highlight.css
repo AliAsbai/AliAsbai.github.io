@@ -1,0 +1,23 @@
+.hoja__highlight h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.hoja__highlight-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 0.4rem solid var(--color-secondary);
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+
+.hoja__highlight-container p {
+    flex: 1;
+    margin: 0 1rem;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: var(--color-black);
+}

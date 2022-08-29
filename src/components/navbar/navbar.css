@@ -1,0 +1,59 @@
+.hoja__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 6rem 0.5rem 1.5rem;
+    background-color: var(--color-black);
+    width: 100%;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.hoja__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hoja__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hoja__navbar-links_container p a {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.hoja__navbar-links_container p a:hover {
+    color: var(--color-white);
+}
+
+.navbar__hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar__hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar__hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

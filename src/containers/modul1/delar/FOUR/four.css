@@ -1,0 +1,8 @@
+.hoja__four > h1 {
+    /*text-shadow: 6px 0px 0px var(--color-black);*/
+    color: var(--color-black);
+}
+
+.hoja__four .hoja__columns {
+    align-items: center;
+}

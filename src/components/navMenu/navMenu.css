@@ -1,0 +1,105 @@
+.hoja__navmenu {
+    top: 2rem;
+    right: 9px;
+    color: rgba(0,0,0,0.5);
+    font-size: 42px;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.hoja__navmenu:hover {
+    color: rgba(0,0,0,1);
+    font-size: 45px;
+    top: 1.9rem;
+    right: 7px;
+    transition: all .2s ease-in-out;
+}
+
+.hoja__navmenu:focus {
+    outline: none;
+}
+
+.hoja__navmenu-hidden {
+    top: -6rem;
+    right: 9px;
+    color: rgba(0,0,0,0.5);
+    font-size: 42px;
+    position: fixed;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.hoja__navmenu-menu {
+    top: 2rem;
+    right: 9px;
+    position: fixed;
+    z-index: 1;
+    border: 2px solid black;
+    transition: all 0.6s ease;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 2%;
+}
+
+.hoja_navmenu-menu_close {
+    font-size: 16px;
+    position: fixed;
+    z-index: 1;
+    top: 2.6rem;
+    right: 15px;
+    cursor: pointer;
+}
+
+.hoja_navmenu-menu_close:hover {
+    color: red;
+}
+
+.hoja__navmenu-menu ol {
+    counter-reset: item;
+  }
+
+.hoja__navmenu-menu li {
+    display: block;
+    color: #666666;
+    cursor: pointer;
+  }
+
+.hoja__navmenu-menu li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+  }
+
+  .hoja__navmenu-menu li ol {
+    margin-left: 0.6rem;
+  }
+
+  .hoja__navmenu-menu li a:hover {
+    color: blue;
+  }
+
+  .hoja__navmenu-menu_hover-underline-animation a {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hoja__navmenu-menu_hover-underline-animation a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rebeccapurple;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .hoja__navmenu-menu_hover-underline-animation a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

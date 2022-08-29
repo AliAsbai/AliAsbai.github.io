@@ -1,0 +1,117 @@
+.hoja__two > h1 {
+    /*text-shadow: 6px 0px 0px var(--color-black);*/
+    color: var(--color-black);
+}
+
+.hoja__two > .hoja__columns > div > h2 {
+    margin: 1rem 0;
+    color: var(--color-black);
+}
+
+.hoja__two div div > p {
+    color: var(--color-black);
+}
+
+.hoja__two div div:not(:last-of-type) > p {
+    margin-bottom: 1rem;
+}
+
+.hoja__two div div > ol {
+    list-style: none;
+    padding: 0 0.3rem;
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: var(--font-family);
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    color: var(--color-black);
+}
+
+.hoja__two div div > ol:first-child {
+    counter-set: foo 2;
+}
+
+.hoja__two div div > ol > li {
+    counter-increment: foo;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.hoja__two div div > ol > li::before {
+    content: counter(foo) " -";
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hoja__two div div > ol ul {
+    list-style: none;
+    padding: 0 0.3rem;
+    margin: 0;
+}
+
+.hoja__two div div > ol ul > li {
+    margin-bottom: 1rem;
+    margin-left: 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.hoja__two div div > ol ul > li::before {
+    content: '- ';
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hoja__two-ref {
+    font-size: 20px!important;
+}
+
+@media screen and (max-width: 1630px) {
+    .hoja__two div div > ol,
+    .hoja__two div div > ol > li::before,
+    .hoja__two div div > ol ul > li::before {
+        line-height: 18px!important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hoja__two div div > ol,
+    .hoja__two div div > ol > li::before,
+    .hoja__two div div > ol ul > li::before {
+        font-size: 16px;
+        line-height: 20px!important;
+    }
+
+    .hoja__two-ref {
+        font-size: 14px!important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .hoja__two div div > ol > li {
+        padding-left: 1.5rem;
+    }
+
+    .hoja__two div div > ol ul > li {
+        padding-left: 1rem;
+    }
+
+    .hoja__two > .hoja__columns > div:first-child {
+        margin-bottom: 0;
+    }
+
+    .hoja__two > .hoja__columns > div:first-child > ol {
+        margin-bottom: 0;
+    }
+}

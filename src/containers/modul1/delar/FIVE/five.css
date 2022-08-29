@@ -1,0 +1,12 @@
+.hoja__five > h1 {
+    /*text-shadow: 6px 0px 0px var(--color-black);*/
+    color: var(--color-white);
+}
+.hoja__five .hoja__columns > h2,
+.hoja__five .hoja__columns div:first-child p {
+    color: var(--color-white);
+}
+
+.hoja__five .hoja__columns {
+    align-items: center;
+}

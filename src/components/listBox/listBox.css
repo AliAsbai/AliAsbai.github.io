@@ -1,0 +1,67 @@
+.hoja__listBox {
+    background-color: var(--color-white);
+    border-radius: 1.5rem;
+    box-shadow: 7px 7px 0px 3px var(--color-black);
+}
+
+.hoja__listBox-container {
+    padding: 2rem 4rem 1.3rem;
+}
+
+.hoja__listBox-container h2 {
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.hoja__listBox-container ul {
+    list-style: none;
+    padding: 0 0.3rem;
+    margin: 0;
+}
+.hoja__listBox-container ul li {
+    margin-left: 0;
+    position: relative;
+    padding-left: 1em;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    margin-bottom: 0.7rem;
+    line-height: 1.5rem;
+    color: var(--color-black);
+}
+
+.hoja__listBox-container ul li::before {
+    content:"\2022";
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.hoja__listBox-container > p {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 1000px) {
+    .hoja__listBox-container > p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.5rem;
+        color: var(--color-white);
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hoja__listBox-container {
+        padding: 2rem 2rem 1.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hoja__listBox {
+        box-shadow: 4px 4px 0px 3px var(--color-white);
+        margin: 0 1rem;
+    }
+}

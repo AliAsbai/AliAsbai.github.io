@@ -1,0 +1,13 @@
+.hoja__six > h1 {
+    /*text-shadow: 6px 0px 0px var(--color-black);*/
+    color: var(--color-black);
+}
+
+.hoja__six p {
+    margin: 1rem 0;
+    color: var(--color-black);
+}
+
+.hoja__six .hoja__columns:last-child {
+    align-items: center;
+}

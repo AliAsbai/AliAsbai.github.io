@@ -1,0 +1,36 @@
+.hoja__one > div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.hoja__one > h1 {
+    /*text-shadow: 6px 0px 0px var(--color-black);*/
+    color: var(--color-white);
+}
+
+.hoja__one-text {
+    align-self: center;
+}
+
+.hoja__one-text {
+    color: var(--color-white);
+}
+
+.hoja__one .hoja__spotlight {
+    background-color: var(--color-third);
+    box-shadow: 7px 7px 0px 3px var(--color-black);
+}
+
+.hoja__one .hoja__spotlight h2,
+.hoja__one .hoja__spotlight ul li {
+    color: var(--color-black);
+}
+
+.hoja__one .hoja__spotlight img {
+    filter: unset;
+}
+
+@media screen and (max-width: 400px) {
+    .hoja__one .hoja__spotlight {
+        box-shadow: 4px 4px 0px 3px var(--color-primary);
+    }
+}
