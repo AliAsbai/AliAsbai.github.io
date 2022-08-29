@@ -13,7 +13,7 @@ const Modul1 = () => {
         summary={Values.intro.summary}
         video={Values.intro.video} />
         </div>
-      <div className='section__padding'>
+      <div className='hoja__modul1-intro section__padding'>
         <Intro 
         title={Values.intro.title}
         summary={Values.intro.summary}
@@ -22,9 +22,9 @@ const Modul1 = () => {
         paragraphs={Values.intro.paragraphs} />
       </div>
       <div className='hoja__modul1-dark section__padding'><ONE /></div>
-      <div className='section__padding'><TWO /></div>
+      <div className='hoja__modul1-two section__padding'><TWO /></div>
       <div className='hoja__modul1-dark section__padding'><THREE /></div>
-      <div className='section__padding'><FOUR /></div>
+      <div className='hoja__modul1-four section__padding'><FOUR /></div>
       <div className='hoja__modul1-dark section__padding'><FIVE /></div>
       <div className='section__padding'><SIX /></div>
     </div>
