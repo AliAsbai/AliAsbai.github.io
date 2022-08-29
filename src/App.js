@@ -10,7 +10,6 @@ const App = () => {
 
   return (
     <div className="App" id="outer-container">
-        <NavMenu />
         <Modul1 />
         <Footer />
         <GoTop />
