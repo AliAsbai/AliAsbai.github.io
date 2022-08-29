@@ -18,9 +18,3 @@
 .hoja__intro-container p:not(:last-of-type) {
     margin-bottom: 1rem;
 }
-
-@media screen and (max-width: 1000px) {
-    .hoja__intro-container > h1 {
-        text-shadow: 4px 0px 0px var(--color-black);
-    }
-}
