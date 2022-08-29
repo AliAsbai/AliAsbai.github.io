@@ -21,12 +21,12 @@ const Modul1 = () => {
         subtitle={Values.intro.subtitle}
         paragraphs={Values.intro.paragraphs} />
       </div>
-      <div className='hoja__modul1-dark section__padding'><ONE /></div>
+      <div className='hoja__modul1-one section__padding'><ONE /></div>
       <div className='hoja__modul1-two section__padding'><TWO /></div>
-      <div className='hoja__modul1-dark section__padding'><THREE /></div>
+      <div className='hoja__modul1-three section__padding'><THREE /></div>
       <div className='hoja__modul1-four section__padding'><FOUR /></div>
-      <div className='hoja__modul1-dark section__padding'><FIVE /></div>
-      <div className='section__padding'><SIX /></div>
+      <div className='hoja__modul1-five section__padding'><FIVE /></div>
+      <div className='hoja__modul1-six section__padding'><SIX /></div>
     </div>
   )
 }

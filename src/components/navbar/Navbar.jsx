@@ -4,7 +4,7 @@ import './navbar.css';
 
 const Menu = () => (
   <>
-    <p className="navbar__hover-underline-animation"><Link to="/">Projekt titel</Link></p>
+    <p className="navbar__hover-underline-animation"><Link to="/">Projekt titel/logo</Link></p>
   </>
 )
 
