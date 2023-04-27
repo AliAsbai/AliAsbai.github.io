@@ -1,0 +1,26 @@
+.inputText__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0.6rem;
+    width: 100%;
+}
+
+.inputText__container label {
+    margin-left: 0.2rem;
+}
+
+.textInput__error {
+    border-color: var(--color-error) !important;
+    margin-bottom: 0.3rem;
+}
+
+#under {
+    align-self: center;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: var(--color-error);
+}

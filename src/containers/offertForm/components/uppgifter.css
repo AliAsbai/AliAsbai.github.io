@@ -1,0 +1,45 @@
+.uppgifter__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppgifter__container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.uppgifter__container div {
+    display: flex;
+    width: 100%;
+}
+
+.uppgifter__container div input,
+.uppgifter__container div label  {
+    margin: 0 0.6rem;
+}
+
+.uppgifter__container-buttonBox {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .uppgifter__container-adress {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .uppgifter__container div {
+        width: 280px;
+    }
+
+    .uppgifter__container div input,
+    .uppgifter__container div label {
+        margin: 0 0.4rem;
+    }
+    .uppgifter__container input[type="text"] {
+        padding: 6px;
+    }
+}

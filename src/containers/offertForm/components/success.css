@@ -1,0 +1,20 @@
+.success__container button {
+    background: #FFFFFF;
+    color: var(--color-marker);
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    border: 2px solid var(--color-button);
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 41px;
+    margin: 1rem 0.3rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.success__container button:hover {
+    background-color: var(--color-button);
+    transform: scale(1.08);
+    color: white;
+}

@@ -1,0 +1,178 @@
+.offert__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.offert__container-progress {
+    display: flex;
+}
+
+.offert__container-progress div {
+    width: 70px;
+    height: 10px;
+    background: var(--color-border);
+    margin: 0.25rem;
+    -webkit-clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+            clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.offert__container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.offert__container-form h1 {
+    font-family: var(--font-family);
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.75;
+    color: var(--color-title);
+}
+
+.offert__container-form p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: var(--color-text);
+}
+
+input[type="radio"] + label {
+    padding: 9px 29px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-marker);
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+input[type="radio"] + label:hover {
+    color: white;
+    background-color: var(--color-button);
+    transform: scale(1.1);
+    border-color: var(--color-border);
+}
+
+input[type="radio"]:checked + label {
+    color: white;
+    background-color: var(--color-button);
+}
+
+input[type="radio"]:disabled + label,
+input[type="radio"]:disabled + label:hover {
+    color: var(--color-border);
+    border-color: var(--color-border);
+    cursor: default;
+}
+
+input[type="radio"] {
+    display: none;
+    opacity: 0;
+}
+
+input[type="tel"],
+input[type="text"] {
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-marker);
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+input[type="tel"]:focus, 
+textarea:focus,
+input[type="text"]:focus {
+    border-color: var(--color-button);
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    height: 100px;
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-marker);
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    resize: none;
+}
+
+#prevButton {
+    background: #FFFFFF;
+    color: var(--color-marker);
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    border: 2px solid var(--color-button);
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 41px;
+    margin: 1rem 0.3rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#nextButton {
+    background: var(--color-button);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    border: 2px solid var(--color-button);
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 41px;
+    margin: 1rem 0.3rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+    transform: scale(1.1);
+}
+
+#error {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: var(--color-error);
+}
+
+@media screen and (max-width: 350px) {
+    .offert__container-progress div {
+        width: 58px;
+    }
+
+    input[type="radio"] + label {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .offert__container-form h1 {
+        font-size: 36px;
+    }
+    
+    .offert__container-form p {
+        font-size: 14px;
+    }
+}

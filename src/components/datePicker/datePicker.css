@@ -1,0 +1,31 @@
+.datepicker__container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    margin-bottom: 1rem;
+}
+
+.datepicker__container-header h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.75;
+    color: #312124;
+    text-transform: capitalize;
+}
+
+.datepicker__container-header_button:hover {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.datepicker__container-header_button:hover {
+    color: var(--color-button);
+}
+
+.datepicker__container-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+}

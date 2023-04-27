@@ -1,0 +1,154 @@
+.kontakt__container {
+    display: flex;
+}
+
+.kontakt__uppgifter-content,
+.kontakt__container-skicka_wrap {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.kontakt h3 {
+    font-size: 28px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 1.21;
+    padding-bottom: 20px;
+    color: var(--color-title);
+}
+
+.kontakt p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--color-text);
+}
+
+#kontakt__text {
+    padding-bottom: 35px;
+}
+
+.kontakt__container-uppgifter {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-section);
+}
+
+.kontakt__uppgifter-content {
+    max-width: 230px;
+}
+
+.kontakt__uppgifter-content ul {
+    list-style-type: none;
+}
+
+.kontakt__uppgifter-content li {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.75;
+    color: var(--color-button);
+    text-decoration: underline;
+    margin-bottom: 0.8rem;
+}
+
+.kontakt__container-skicka {
+    flex: 2;
+    background: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 19rem;
+    padding-left: 19rem;
+}
+
+.kontakt__container-skicka_wrap h3,
+.kontakt__container-skicka_wrap #kontakt__text {
+    margin: 0 1rem
+}
+
+.kontakt__personalKort {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontakt__personalKort-kort {
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt__personalKort-kort div {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .kontakt__container-uppgifter {
+        flex: 1;
+    }
+
+    .kontakt__container-skicka {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .kontakt__container-skicka {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .kontakt__container-skicka {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .kontakt__personalKort-kort div {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .kontakt__uppgifter-content {
+        overflow-wrap: break-word;
+        margin: 0 1rem;
+    }
+    
+    .kontakt h3 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    .kontakt p {
+        font-size: 12px;
+    }
+
+    .kontakt__uppgifter-content li {
+        font-size: 10px;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .kontakt__container {
+        flex-direction: column-reverse;
+    }
+
+    .kontakt__container-uppgifter {
+        padding-top: 0 !important;
+        text-align: center;
+    }
+
+    .kontakt__personalKort-kort {
+        flex-direction: column;
+    }
+}
+

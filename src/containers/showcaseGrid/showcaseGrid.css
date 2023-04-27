@@ -1,0 +1,17 @@
+.showcaseGrid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.showcaseGrid__container div:last-of-type {
+    grid-column-start: 2;
+}
+
+@media screen and (max-width: 1160px) {
+    .showcaseGrid__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

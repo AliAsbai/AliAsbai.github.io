@@ -1,0 +1,25 @@
+.card__container {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--color-section);
+    max-width: 300px;
+}
+
+.card__container img {
+    align-self: center;
+    width: 100%;
+}
+
+.card__container p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--color-text);
+    margin-left: 0.7rem;
+    overflow-wrap: break-word;
+}
+
+.card__container strong {
+    color: var(--color-title);
+}

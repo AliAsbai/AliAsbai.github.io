@@ -1,0 +1,33 @@
+.gpt3__gotop {
+    bottom: 2rem;
+    right: 26px;
+    color: rgba(0,0,0,0.5);
+    font-size: 42px;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.gpt3__gotop:hover {
+    color: rgba(0,0,0,1);
+    font-size: 45px;
+    bottom: 1.9rem;
+    right: 24px;
+    transition: all .2s ease-in-out;
+}
+
+.gpt3__gotop:focus {
+    outline: none;
+}
+
+.gpt3__gotop-hidden {
+    bottom: -6rem;
+    right: 26px;
+    color: rgba(0,0,0,0.5);
+    font-size: 42px;
+    position: fixed;
+    z-index: 1;
+    transition: all 0.6s ease;
+}

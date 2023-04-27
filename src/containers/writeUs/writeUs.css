@@ -1,0 +1,64 @@
+.writeUs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: var(--color-section);
+    padding: 2rem;
+}
+
+.writeUs__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 5rem;
+    background-image: url('../../assets/startsidakontaktaoss2020-1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.writeUs-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.writeUs__container-title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 1rem;
+    color: var(--color-title);
+}
+
+.writeUs__container-p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-text);
+    margin: 1rem;
+    max-width: 580px;
+}
+
+@media screen and (max-width: 990px) {
+    .writeUs {
+        flex-direction: column;
+    }
+
+    .writeUs__image {
+        margin: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .writeUs {
+        padding: 1rem;
+    }
+}

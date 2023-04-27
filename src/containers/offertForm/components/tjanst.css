@@ -1,0 +1,36 @@
+.tjanst__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tjanst__container div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8rem; 
+    margin: 1rem 1rem 0.3rem;
+}
+
+@media screen and (max-width: 650px) {
+    .tjanst__container div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tjanst__container div {
+        grid-gap: 0.3rem;
+    }
+
+    .tjanst__container label {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .tjanst__container input[type="radio"] + label {
+        padding: 9px 15px;
+    }
+}
+  

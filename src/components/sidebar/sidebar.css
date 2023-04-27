@@ -1,0 +1,145 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    right: 42px;
+    top: 2rem;
+    color: var(--color-border);
+    transition: all 0.6s ease;
+}
+
+.bm-burger-button_hidden {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    right: 42px;
+    top: -3rem;
+    color: var(--color-border);
+    transition: all 0.6s ease;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-button:hover {
+    color: #FFFFFF;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    color: var(--color-border);
+    width: 36px !important;
+    height: 36px !important;
+    right: 524px !important;
+    top: 38px !important;
+}
+
+.bm-cross-button:hover {
+    color: #FFFFFF;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    width: 600px !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #000000;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: var(--color-border);
+    padding: 8em 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+    color: var(--color-border);
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.bm-item:focus {
+    outline: none;
+}
+
+.bm-item:hover {
+    color: #FFFFFF;
+}
+
+.sidebar__hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .sidebar__hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .sidebar__hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1200px) {
+    .bm-cross-button,
+    .bm-cross-button svg,
+    .bm-cross-button button {
+        right: 374px !important;
+    }
+
+    .bm-menu-wrap {
+        width: 450px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bm-cross-button,
+    .bm-cross-button svg,
+    .bm-cross-button button {
+        right: 224px !important;
+    }
+
+    .bm-menu-wrap {
+        width: 300px !important;
+    }
+}

@@ -1,0 +1,57 @@
+.textBoard__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.textBoard__container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textBoard__container-title h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    color: var(--color-title);
+    margin: 1rem;
+}
+
+.textBoard__container-title h3 {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 800;
+    max-width: 900px;
+    margin-bottom: 3rem;
+}
+
+.textBoard__container-features {
+    max-width: 900px;
+    margin-bottom: 1rem;
+}
+
+.textBoard__container button {
+    padding: 1rem 2rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    background: var(--color-button);
+    border-radius: 40px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.textBoard__container button:hover {
+    transform: scale(1.1);
+}

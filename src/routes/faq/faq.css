@@ -1,0 +1,160 @@
+.faq__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.faq__container h1 {
+    font-size: 66px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 1.21;
+    padding-bottom: 20px;
+    color: var(--color-title);
+    margin-bottom: 2rem;
+    max-width: calc(800px - 4rem);
+}
+
+.faq__container-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+
+}
+
+.Collapsible {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    background-color: var(--color-section);
+}
+
+.Collapsible__trigger div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    margin: 0 2rem;
+}
+
+.Collapsible__trigger h3 {
+    color: var(--color-title);
+    font-family: var(--font-family);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.75;
+    width: calc(100% - 46px);
+}
+
+.Collapsible__contentInner {
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.Collapsible__contentInner p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--color-text);
+}
+
+.faq__container-contact {
+    width: 100%;
+    padding: 5rem 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.faq__container-contact_form {
+    flex: 0.4;
+    max-width: 700px;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__container-contact_form h3 {
+    font-size: 38px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 1.21;
+    padding-bottom: 40px;
+    color: var(--color-title);
+    margin-left: 1rem;
+    max-width: 530px;
+}
+
+.faq__container-contact_image {
+    flex: 0.4;
+    margin-left: 2rem;
+    background-image: url('../../assets/startsidakontaktaoss2020-1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+    .faq__container-contact_image {
+        display: none;
+    }
+
+    .faq__container-contact_form {
+        flex: 1;
+        max-width: calc(800px - 4rem);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .faq__container h1 {
+        font-size: 38px;
+        max-width: 550px;
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .faq__container-questions{
+        max-width: 550px;
+        margin: 0 2rem;
+    }
+
+    .faq__container-contact_form {
+        max-width: 550px;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Collapsible__trigger div {
+        min-height: 60px;
+    }
+
+    .Collapsible__trigger div h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .faq__container {
+        padding: 2rem 0;
+    }
+
+    .faq__container h1 {
+        font-size: 30px;
+        max-width: 300px;
+    }
+
+    .Collapsible {
+        max-width: 290px;
+    }
+
+    .Collapsible__trigger div h3 {
+        font-size: 19px;
+    }
+
+    .faq__container-contact_form h3 {
+        font-size: 30px;
+    }
+}
